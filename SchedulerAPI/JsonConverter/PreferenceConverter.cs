@@ -36,7 +36,7 @@ namespace SchedulerAPI.JsonConverter
 
         public override void Write(Utf8JsonWriter writer, CustomerPreferenceDTO value, JsonSerializerOptions options)
         {
-            JsonSerializer.Serialize(writer, (object)value, options);
+            throw new NotImplementedException();
         }
 
         private static Type? GetTypeFromDifferentiator(string preferenceDifferentiator) =>
