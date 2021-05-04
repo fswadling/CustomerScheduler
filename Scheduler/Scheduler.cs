@@ -7,7 +7,7 @@ namespace CustomerPreferences
     {
         public static Schedule CreateSchedule(IEnumerable<CustomerPreference> customerPreferences, DateRange dateRange)
         {
-            var customersOnDates = new Schedule();
+            var schedule = new Schedule();
 
             foreach (var customerPreference in customerPreferences)
             {
@@ -16,11 +16,11 @@ namespace CustomerPreferences
                 foreach (var date in datesForCustomer)
                 {
                     // Dates are inserted in order as customersOnDates is an SortedDictionary
-                    customersOnDates.AddCustomerOnDate(date, customerPreference.Customer);
+                    schedule.AddCustomerOnDate(date, customerPreference.Customer);
                 }
             }
 
-            return customersOnDates;
+            return schedule;
         }
     }
 }
