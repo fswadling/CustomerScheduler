@@ -88,12 +88,7 @@ namespace SchedulerAPI.JsonConverter
                 throw new JsonException("Error deserializing days of the week", e);
             }
 
-            var daySelection = new DaySelection();
-
-            foreach (var day in days)
-            {
-                daySelection.Add(day);
-            }
+            var daySelection = new DaySelection(days);
 
             return new DaysOfTheWeek { DaySelection = daySelection };
         }

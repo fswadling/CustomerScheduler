@@ -7,9 +7,8 @@ namespace SchedulerAPI.Dtos
     {
         public static ScheduleDTO ToScheduleDTO(this Schedule schedule)
         {
-            var dto = new ScheduleDTO();
             var keyValuesPairs = schedule.ToDictionary(x => x.Key.ToShortDateString(), x => x.Value);
-            dto.AddRange(keyValuesPairs);
+            var dto = new ScheduleDTO(keyValuesPairs);
             return dto;
         }
     }
