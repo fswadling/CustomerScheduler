@@ -10,6 +10,6 @@ namespace CustomerPreferences.Preferences
         public int Day { get; init; } = 1;
 
         public IEnumerable<DateTime> GetDatesInRange(DateRange dateRange) =>
-            dateRange.GetDatesOnDayInMonthInRange(this.Day);
+            dateRange.DatesOnDayInMonthInRange(this.Day);
     }
 }

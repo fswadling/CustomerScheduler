@@ -10,6 +10,6 @@ namespace CustomerPreferences.Preferences
         public DaySelection DaySelection { get; init; } = new DaySelection();
 
         public IEnumerable<DateTime> GetDatesInRange(DateRange dateRange) =>
-            dateRange.GetDatesOnSelectedDays(this.DaySelection);
+            dateRange.DatesOnSelectedDays(this.DaySelection);
     }
 }
