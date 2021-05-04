@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler", "CustomerPreferences\Scheduler.csproj", "{52625C31-A11F-452B-AED5-F6566FF77D87}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchedulerTests", "SchedulerTests\SchedulerTests.csproj", "{983F71AB-DF94-4F33-83E0-2FA0F167F37A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchedulerAPI", "SchedulerAPI\SchedulerAPI.csproj", "{1A1DFF25-F040-4EAE-9180-20A136CFA985}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scheduler", "Scheduler\Scheduler.csproj", "{AE6EA16D-7268-4C7C-88F3-D9ADDC5633BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52625C31-A11F-452B-AED5-F6566FF77D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52625C31-A11F-452B-AED5-F6566FF77D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52625C31-A11F-452B-AED5-F6566FF77D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52625C31-A11F-452B-AED5-F6566FF77D87}.Release|Any CPU.Build.0 = Release|Any CPU
 		{983F71AB-DF94-4F33-83E0-2FA0F167F37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{983F71AB-DF94-4F33-83E0-2FA0F167F37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{983F71AB-DF94-4F33-83E0-2FA0F167F37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{1A1DFF25-F040-4EAE-9180-20A136CFA985}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A1DFF25-F040-4EAE-9180-20A136CFA985}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A1DFF25-F040-4EAE-9180-20A136CFA985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6EA16D-7268-4C7C-88F3-D9ADDC5633BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6EA16D-7268-4C7C-88F3-D9ADDC5633BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6EA16D-7268-4C7C-88F3-D9ADDC5633BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6EA16D-7268-4C7C-88F3-D9ADDC5633BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
