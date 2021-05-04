@@ -25,7 +25,7 @@ namespace SchedulerAPI.JsonConverter
 
             var typeDifferentiator = typeProperty.Value.GetString() ?? throw new JsonException();
 
-            var preference = GetReadPreferenceUsingDifferentiator(typeDifferentiator, jsonDocument);
+            var preference = ReadPreferenceUsingDifferentiator(typeDifferentiator, jsonDocument);
 
             var customerProperty = GetPropertyIgnoreCase(jsonDocument, nameof(CustomerPreferenceDTO.Customer)) ?? throw new JsonException();
 
@@ -60,7 +60,7 @@ namespace SchedulerAPI.JsonConverter
                 : null;
         }
 
-        private static IPreference GetReadPreferenceUsingDifferentiator(string typeDifferentiator, JsonDocument jsonDocument)
+        private static IPreference ReadPreferenceUsingDifferentiator(string typeDifferentiator, JsonDocument jsonDocument)
         {
             var preferenceType = GetTypeFromDifferentiator(typeDifferentiator) ?? throw new JsonException();
 
